@@ -3,8 +3,8 @@ import Posts from "./pages/Posts.js";
 import Products from "./pages/Products.js";
 
 // 1. what view show to user based on Route ?
+
 function router() {
-  // dashboard, products, posts :
   const routes = [
     { path: "/", view: Dashboard },
     { path: "/posts", view: Posts },
@@ -31,6 +31,7 @@ function router() {
 }
 
 // 2. push user to new url :
+
 function navigateTo(url) {
   history.pushState(null, null, url);
   router();
