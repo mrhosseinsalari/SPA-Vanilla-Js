@@ -50,3 +50,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   router();
 });
+
+// sidebar toggler
+const sidebarToggler = document.querySelector(".sidebar-toggler");
+const sidebar = document.querySelector(".nav");
+
+sidebarToggler.addEventListener("click", () => {
+  sidebar.classList.toggle("mini-sidebar");
+});
